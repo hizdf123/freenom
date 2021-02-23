@@ -97,7 +97,7 @@ class Mail
             throw new LlfException(env('ON_GITHUB_ACTIONS') ? 34520011 : 34520012);
         }
 
-        self::mail()->addAddress($to, config('mail.toName', '主人')); // 添加收件人，参数2选填
+        self::mail()->addAddress($to, config('mail.toName', '主人11111')); // 添加收件人，参数2选填
         self::mail()->addReplyTo(config('mail.replyTo', 'mybsdc@qq.com'), config('mail.replyToName', '作者')); // 备用回复地址，收到的回复的邮件将被发到此地址
 
         /**
